@@ -1,0 +1,163 @@
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem;
+    border-top: 2px solid #ef9eb3;
+
+    .container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 10rem;
+
+        @media (max-width:841px) {
+            gap: 9rem;
+        }
+
+        @media (max-width:795px) {
+            gap: 8rem;
+        }
+
+        @media (max-width:748px) {
+            gap: 7rem;
+        }
+
+        @media (max-width:676px) {
+            gap: 5rem;
+        }
+
+        .link-container {
+
+            ul {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 8rem;
+            }
+
+            a {
+                color: var(--pink);
+                font-size: 0.8rem;
+
+                @media (max-width:992px) {
+                    font-size: 0.6rem;
+                }
+
+                @media (max-width:740px) {
+                    font-size: 0.55rem;
+                }
+
+                &:hover {
+                    color: #d82d5bd1;
+                }
+            }
+        }
+
+        .wrapper {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 2rem;
+            width: 30%;
+
+            .title {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                span {
+                    font-size: 1.6rem;
+                    color: var(--blue);
+                    position: relative;
+
+                    @media (max-width:992px) {
+                        font-size: 1rem;
+                    }
+
+                    &:after {
+                        content: "";
+                        display: block;
+                        width: 30rem;
+                        height: 1px;
+                        background-color: var(--blue);
+                        right: 14rem;
+                        top: 50%;
+                        position: absolute;
+
+                        @media (max-width:1199px) {
+                            width: 25rem;
+                            right: 12rem;
+                        }
+
+                        @media (max-width:676px) {
+                            right: 10rem;
+                        }
+                    }
+
+                    &:before {
+                        content: "";
+                        display: block;
+                        width: 25rem;
+                        height: 1px;
+                        background-color: var(--blue);
+                        left: 14rem;
+                        top: 50%;
+                        position: absolute;
+
+                        @media (max-width:1199px) {
+                            width: 25rem;
+                            left: 12rem;
+                        }
+
+                        @media (max-width:676px) {
+                            left: 10rem;
+                        }
+                    }
+                }
+
+                p {
+                    font-size: 1rem;
+
+                    @media (max-width:992px) {
+                        font-size: 0.7rem
+                    }
+                }
+            }
+
+            .line {
+                background-color: var(--blue);
+                width: 1px;
+                height: 5rem;
+            }
+
+            .social-media {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 4rem;
+
+                img {
+                    width: 1.5rem;
+                    height: 1.5rem;
+
+                    @media (max-width: 992px) {
+                        width: 1.2rem;
+                        height: 1.2rem;
+                    }
+                }
+            }
+
+            p {
+                font-size: .9rem;
+                line-height: 1;
+
+                @media (max-width:1064px) {
+                    font-size: .7rem;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,60 @@
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: var(--white);
+    font-size: 1.5rem;
+    overflow-x: hidden;
+
+    
+}
+
+.container{
+    width: 100%;
+    max-width: 75rem;
+}
+
+button {
+    padding: .9rem 2rem;
+    color: #ffffff;
+    background-color: var(--pink);
+    font-weight: 600;
+    cursor: pointer;
+
+    @media (max-width:1199px) {
+        padding: 0.7rem 1rem;
+    }
+}
+
+span {
+    font-size: 2rem;
+    color: var(--pink);
+    font-weight: 600;
+    font-family: 'Gloock', serif;
+
+    @media (max-width: 1140px) {
+        font-size: 1.5rem;
+    }
+}
+
+p {
+    font-size: 1.2rem;
+    font-family: 'Playfair Display', serif;
+    line-height: 2;
+
+    @media (max-width: 1140px) {
+        font-size: 1rem;
+    }
+}
+
+li a {
+    font-size: 1rem;
+    color: var(--blue);
+}

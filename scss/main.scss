@@ -1,0 +1,337 @@
+@import "reset";
+@import "header";
+@import "footer";
+@import "colors";
+
+main {
+    width: 100%;
+
+    #HOME {
+        width: 100%;
+        height: 90vh;
+        background-image: url(/img/cupcakes-background.jpg);
+        background-position: left;
+        background-size: cover;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            margin-left: 10rem;
+
+            @media (max-width:1199px) {
+                margin-left: 10rem;
+            }
+
+            @media (max-width:695px) {
+                margin-left: 5rem;
+            }
+
+            p {
+                color: var(--white);
+                margin-right: 21rem;
+                font-family: 'Gloock', serif;
+            }
+
+            span {
+                color: var(--white);
+                font-size: 3.5rem;
+                font-family: 'Gloock', serif;
+
+                @media (max-width:930px) {
+                    font-size: 3rem;
+                }
+
+                @media (max-width:810px) {
+                    font-size: 2.5rem;
+                }
+            }
+
+        }
+
+
+    }
+
+
+
+    #DONUTS {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 2rem;
+
+        .container {
+            display: flex;
+            align-items: center;
+
+            @media (max-width:890px) {
+                flex-direction: column;
+            }
+        }
+
+        .txt-container {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            margin: 5rem;
+            gap: 4rem;
+
+            p {
+                text-align: left;
+            }
+        }
+
+        img {
+            width: 35rem;
+            height: 25rem;
+
+            @media (max-width: 1140px) {
+                width: 30rem;
+                height: 20rem;
+            }
+
+            @media (max-width: 1030px) {
+                width: 25rem;
+                height: 15rem;
+            }
+        }
+    }
+
+    #DISH {
+        width: 100%;
+        height: 90vh;
+        display: flex;
+        justify-content: center;
+        background-image: url(/img/pink.jpg);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        padding: 5rem;
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            gap: 3rem;
+
+            @media (max-width:768px) {
+                gap: 3rem;
+            }
+
+            .txt-container {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                gap: 3rem;
+
+                span {
+                    color: var(--pink);
+                }
+
+                p {
+                    width: 50%;
+                    text-align: center;
+                    color: var(--white);
+                }
+            }
+
+            .dishs {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 5rem;
+
+                div {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    flex-direction: column;
+                    gap: 2rem;
+
+                }
+
+                .dessearts {
+                    display: none;
+
+                    @media (max-width:768px) {
+                        display: flex;
+                    }
+
+                    img {
+                        width: 35rem;
+                        height: 21rem;
+
+                        @media (max-width:768px) {
+                            width: 30rem;
+                            height: 18rem;
+                        }
+                    }
+                }
+
+                .macaron {
+                    @media (max-width:992px) {
+                        display: none;
+                    }
+
+                    span {
+                        margin-left: 8rem;
+                    }
+
+                    img {
+                        width: 20rem;
+                        height: 25rem;
+    
+                        @media (max-width:1199px) {
+                            width: 15rem;
+                            height: 20rem;
+                        }
+                    }
+                }
+
+                .waffles {
+                    @media (max-width:992px) {
+                        margin-right: 10rem;
+                    }
+
+                    @media (max-width:768px) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 25rem;
+                        height: 15rem;
+                        margin-top: 10.4rem;
+
+    
+                        @media (max-width:1199px) {
+                            width: 18rem;
+                            height: 10rem;
+                        }
+    
+                        @media (max-width:992px) {
+                            width: 20rem;
+                            height: 12rem;
+                        }
+                    }
+                }
+
+                
+
+
+                .icecream {
+                    @media (max-width:768px) {
+                        display: none;
+                    }
+
+                    img {
+                        width: 20rem;
+                        height: 15rem;
+                        margin-top: 10rem;
+    
+                        @media (max-width:1199px) {
+                            width: 15rem;
+                            height: 10rem;
+                        }
+    
+                        @media (max-width:992px) {
+                            width: 17rem;
+                            height: 12rem;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    #WORK {
+        display: flex;
+        justify-content: center;
+        padding: 5rem;
+
+        .container {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 4rem;
+
+            .frame {
+                border: solid 5vmin #eee;
+                border-bottom-color: #fff;
+                border-left-color: #eee;
+                border-radius: 2px;
+                border-right-color: #eee;
+                border-top-color: #ddd;
+                box-shadow: 0 0 5px rgba(0, 0, 0, .25) inset, 0 5px 10px 5px rgba(0, 0, 0, .25);
+                margin: 3vh 3vw;
+                position: relative;
+
+                &:before {
+                    border-radius: 2px;
+                    bottom: -2vmin;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25) inset;
+                    content: "";
+                    left: -2vmin;
+                    position: absolute;
+                    right: -2vmin;
+                    top: -2vmin;
+                }
+
+                &:after {
+                    border-radius: 2px;
+                    bottom: -2.5vmin;
+                    box-shadow: 0 2px 5px 0 rgba(0, 0, 0, .25);
+                    content: "";
+                    left: -2.5vmin;
+                    position: absolute;
+                    right: -2.5vmin;
+                    top: -2.5vmin;
+                }
+
+                @media (max-width:992px) {
+                    display: none;
+                }
+
+                img {
+                    width: 25rem;
+                    height: 19rem;
+                    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    
+                    @media (max-width: 1140px) {
+                        width: 20rem;
+                        height: 13rem;
+                    }
+    
+                    @media (max-width: 992px) {
+                        width: 15rem;
+                        height: 10rem;
+                    }
+                }
+            }
+
+            .txt-container {
+                display: flex;
+                flex-direction: column;
+                gap: 2rem;
+                color: rgb(0, 0, 0);
+                width: 50%;
+
+                @media (max-width:992px) {
+                    width: 100%;
+                }
+
+                span {
+                    font-size: 2.5rem;
+
+                    @media (max-width: 1140px) {
+                        font-size: 1.5rem;
+                    }
+                }
+            }
+        }
+    }
+}
